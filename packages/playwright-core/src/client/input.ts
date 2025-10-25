@@ -54,7 +54,7 @@ export class Mouse implements api.Mouse {
     this._page = page;
   }
 
-  async move(x: number, y: number, options: { steps?: number } = {}) {
+  async move(x: number, y: number, options: channels.PageMouseMoveOptions = {}) {
     await this._page._channel.mouseMove({ x, y, ...options });
   }
 

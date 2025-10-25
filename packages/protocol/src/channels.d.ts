@@ -2458,12 +2458,12 @@ export type PageMouseClickParams = {
   delay?: number,
   button?: 'left' | 'right' | 'middle',
   clickCount?: number,
-};
+} & PageMouseMoveParams;
 export type PageMouseClickOptions = {
   delay?: number,
   button?: 'left' | 'right' | 'middle',
   clickCount?: number,
-};
+} & PageMouseMoveOptions;
 export type PageMouseClickResult = void;
 export type PageMouseWheelParams = {
   deltaX: number,
